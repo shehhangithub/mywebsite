@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+    <title>My favourite things</title>
+  </head>
+
+  <body>
+    <nav
+      id="website navbar"
+      class="navbar navbar-expand-md navbar-light bg-white sticky-top"
+    >
+      <div class="navbar-content">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="fa fa-home" style="color: black" ; href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="fa fa-gamepad" href="#Games">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="fa fa-book" href="#books">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="fa fa-map" href="#places">Places</a>
+          </li>
+          <li class="nav-item">
+            <a class="fa fa-soccer-ball-o" href="#sports"> Sports</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row m-3" id="title-text">
+        <div class="col-md-12">
+          <div class="alert alert-info alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">
+              &times;
+            </button>
+            This site was created by Javier.
+          </div>
+          <!-- Title jumbotron -->
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col pt-5">
+                <h1>Hello, this is me!</h1>
+                <div class="col-3 center">
+                  <img src="assets/woosh woosh.PNG" height="200px" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="Games" class="carousel slide" data-ride="carousel">
+        <!-- Carousel Elements -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/roblox.jpg"
+              class="img-fluid"
+              width="1500px"
+              height="100px"
+            />
+            <div class="carousel-caption">
+              <h1>Roblox</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/crk.jpg"
+              class="img-fluid"
+              width="1500px"
+              height="100px"
+            />
+            <div class="carousel-caption">
+              <h1>Cookie Run Kingdom</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <a
+          class="carousel-control-prev"
+          href="#landmarks-carousel"
+          data-slide="prev"
+        >
+          <span class="fa fa-chevron-left"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#landmarks-carousel"
+          data-slide="next"
+        >
+          <span class="fa fa-chevron-right"></span>
+        </a>
+
+        <!-- Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li
+            data-target="#landmarks-carousel"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#landmarks-carousel" data-slide-to="1"></li>
+        </ol>
+      </div>
+      <div class="row mt-5" id="icons">
+        <div class="col-md-6 text-center">
+          <h4>Roblox</h4>
+          <img
+            src="assets/roblox logo.jpg"
+            alt=""
+            style="width: 100px"
+            class="m-3"
+          />
+          <a
+            href="https://www.roblox.com/"
+            class="btn btn-primary"
+            style="width: 180px"
+          >
+            Play the game
+          </a>
+        </div>
+        <div class="col-md-6 text-center">
+          <h4>Youtube</h4>
+          <img src="assets/yt.png" alt="" style="width: 100px" class="m-3" />
+          <a
+            href="https://www.youtube.com/"
+            class="btn btn-primary"
+            style="width: 120px"
+          >
+            Watch videos about the games
+          </a>
+        </div>
+        <!-- <div class="col-md-4 text-center">
+                <h4>Food</h4>
+                <img
+                src="assets/icons/food.png"
+                alt=""
+                style="width: 100px"
+                class="m-3"
+                />
+                <a
+                href="https://migrationology.com/singapore-food/"
+                class="btn btn-primary"
+                style="width: 165px"
+                >
+                Explore Local Food
+                </a>
+            </div> -->
+      </div>
+      <div class="row py-3" id="nature">
+        <div class="col-md-12 nature-gallery">
+          <h2 class="nature-gallery-title">How the games work?</h2>
+
+          <div class="card-deck">
+            <div class="card bg-danger">
+              <img class="card-img-top" src="assets/roblox.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Roblox</h4>
+                <p class="card-text">
+                  Roblox is an online game platform that allows users to play
+                  games created by other users.
+                </p>
+              </div>
+            </div>
+            <div class="card bg-info">
+              <img class="card-img-top" src="assets/crk.jpg" />
+              <div class="card-body">
+                <h4 class="card-title">Cookie Run Kingdom</h4>
+                <p class="card-text">
+                  Cookie Run: Kingdom is a spin-off serving as the sixth game
+                  within the overall Cookie Run franchise. It is only playable
+                  on mobile devices
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row py-3" id="books">
+        <div class="col-md-12">
+          <h1>
+            <span class="badge badge-info"> The Hunger Games Series </span>
+          </h1>
+          <table class="table table-borderless">
+            <thead class="thead-dark">
+              <tr>
+                <th>No.</th>
+                <th class="w-50">Book</th>
+                <th>Date of release</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <a
+                    href="#singlish"
+                    data-toggle="popover"
+                    data-container="body"
+                    data-content="Written in the perspective of 16-year-old Katniss Everdeen, who lives in the nation of Panem in North America. The Capitol, exercises political control over the rest of the nation using The Hunger Games. The Hunger Games is an annual event in which one boy and one girl aged 12–18 from each of the twelve districts surrounding the Capitol are selected by a reaping to compete in a fight to the death."
+                    data-placement="right"
+                    title="The Hunger Games"
+                    data-trigger="hover"
+                  >
+                    The Hunger Games
+                  </a>
+                </td>
+                <td>September 14, 2008</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <a
+                    href="#singlish"
+                    data-toggle="popover"
+                    data-container="body"
+                    data-content="After arriving safely home, Katniss Everdeen and Peeta Mellark discover that they must do a quick turnaround and begin a Victors Tour. As she and Peeta travel throughout the districts, Katniss senses a rebellion is stirring. However, President Snow proves that he is still very much in control when word comes of a cruel change in the rules for the upcoming 75th Hunger Games."
+                    data-placement="right"
+                    title="Catching Fire"
+                    data-trigger="hover"
+                  >
+                    Catching Fire
+                  </a>
+                </td>
+                <td>September 1, 2009</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  <a
+                    href="#singlish"
+                    data-toggle="popover"
+                    data-container="body"
+                    data-content="Following her rescue from the Quarter Quell, Katniss awakes in the complex beneath the supposedly destroyed District 13. Her home, District 12, has been reduced to rubble, and Peeta Mellark is now the brainwashed captive of President Snow. At the same time, Katniss also learns about a secret rebellion spreading throughout all of Panem -- a rebellion that will place her at the center of a plot to turn the tables on Snow."
+                    data-placement="right"
+                    title="Mockingjay"
+                    data-trigger="hover"
+                  >
+                    Mockingjay
+                  </a>
+                </td>
+                <td>August 24, 2010</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>
+                  <a
+                    href="#singlish"
+                    data-toggle="popover"
+                    data-container="body"
+                    data-content="Set in the universe of The Hunger Games, the book follows Coriolanus Snow, who is chosen to mentor a tribute in the upcoming 10th Hunger Games. He is assigned the District 12 tribute, Lucy Gray Baird, who sparks the Capitol's attention after singing during the reaping."
+                    data-placement="right"
+                    title="The Ballad of Songbirds and Snakes"
+                    data-trigger="hover"
+                  >
+                    The Ballad of Songbirds and Snakes
+                  </a>
+                </td>
+                <td>May 19, 2020</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+        </div>
+      </div>
+      <div class="row p-5" id="places">
+        <div class="col-md-6 text-center p-4" style="background-color: bisque">
+          <h2>Details about my school</h2>
+          <img
+            src="assets/NJC.jpg"
+            alt=""
+            style="width: 100%"
+            class="p-3"
+          />
+          <a href="https://nationaljc.moe.edu.sg/"><p>Find out more</p></a>
+        </div>
+        <div class="col-md-6 text-center p-4" style="background-color: wheat">
+          <h2>Try to find my school!</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255281.19036186565!2d103.70416169489619!3d1.3143393869403048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da11238a8b9375%3A0x887869cf52abf5c4!2sSingapore!5e0!3m2!1sen!2ssg!4v1584326505821!5m2!1sen!2ssg"
+            width="400"
+            height="300"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+      <div class="row pb-3" id="timeline-row">
+        <div class="col-md-12 text-center">
+          <h1 class="display-4 mb-3"> A weekday in my life </h1>
+        </div>
+        <div class="col-md-12 py-3 timeline">
+          <div class="container left">
+            <div class="content">
+              <h2> 5:15am-5:50am</h2>
+              <h3> Waking up</h3>
+              <p> I wake up and get ready for school by eating breakfast, brushing my teeth and changing into my school uniform.</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2> 5:50am-2:00pm</h2>
+              <h3> School</h3>
+              <p> I reach school by 6:30am and school starts at 7:40am. I have many lessons during school for example on Friday, where I have LA (english), Math, PE, Science and History. As a class chairperson, I have to carry out the activities during CCE lessons planned by the Student Council</p> 
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2> 3:00pm-7:00pm</h2>
+              <h3> CCA</h3>
+              <p> I have to reach Macritchie Reservior by 3:00pm everyday that I have CCA and we will paddle from 3:50pm-6:15pm. I use a C1 Nelo which is a canoe boat which means that you have to paddle on 1 side only.</p>  
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2> 8:00pm-10:00pm</h2>
+              <h3> At home</h3>
+              <p> I reach home at 8:00pm and eat dinner, shower, then do homework, read books or play games before sleeping.</p>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-3" id="sports">
+        <div class="col-md-12 text-center mb-3 py-1" style="border: 1px solid">
+          <h1>
+            <a
+              href="#"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="<h4><em>Majulah Singapura</em></h4>"
+              data-html="true"
+              >National Anthem</a
+            >
+            of Singapore
+          </h1>
+        </div>
+        <div class="col-md-7 text-center">
+          <div id="anthem-accordion">
+            <div class="card">
+              <div class="card-header">
+                <h2 class="mb-0">
+                  <button
+                    type="button"
+                    class="btn btn-link btn-lg"
+                    data-toggle="collapse"
+                    data-target="#english-anthem-body"
+                  >
+                    Click Here For National Anthem in English
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="english-anthem-body"
+                class="card-body anthem-body collapse"
+                data-parent="#anthem-accordion"
+              >
+                <p>
+                  Come, fellow Singaporeans; Let us progress towards happiness
+                  together
+                </p>
+                <p>May our noble aspiration bring; Singapore success</p>
+                <p>Come, let us unite; In a new spirit</p>
+                <p>
+                  Let our voices soar as one; Onward Singapore! Onward
+                  Singapore!
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h2 class="mb-0">
+                  <button
+                    type="button"
+                    class="btn btn-link btn-lg"
+                    data-toggle="collapse"
+                    data-target="#chinese-anthem-body"
+                  >
+                    Click Here For National Anthem in Chinese
+                  </button>
+                </h2>
+              </div>
+              <div
+                id="chinese-anthem-body"
+                class="card-body anthem-body collapse"
+                data-parent="#anthem-accordion"
+              >
+                <p>来吧，新加坡人民，让我们共同向幸福迈进；</p>
+                <p>我们崇高的理想，要使新加坡成功。</p>
+                <p>来吧，让我们以新的精神，团结在一起；</p>
+                <p>我们齐声欢呼： 前进吧，新加坡！前进吧，新加坡！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 text-center">
+          <button
+            type="button"
+            class="btn btn-danger btn-lg malay-anthem-btn"
+            data-toggle="collapse"
+            data-target="#malay-anthem-body"
+          >
+            National Anthem (Malay)
+          </button>
+          <div id="malay-anthem-body" class="collapse">
+            <p>Mari kita rakyat Singapura</p>
+            <p>Sama-sama menuju bahagia</p>
+            <p>Cita-cita kita yang mulia; Berjaya Singapura</p>
+            <p>Marilah kita bersatu; Dengan semangat yang baru</p>
+            <p>Semua kita berseru</p>
+            <p>Majulah Singapura! Majulah Singapura!</p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      </div>
+    </div>
+  </body>
+</html>
